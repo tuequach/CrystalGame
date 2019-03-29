@@ -21,8 +21,8 @@
     imageFries.addClass("fries-image");
 
     imageHamburger.attr("src", "assets/images/hamburger.png");
-    imageHotdog.attr("src", "assets/images/hamburger.png");
-    imageFries.attr("src", "assets/images/hamburger.png");
+    imageHotdog.attr("src", "assets/images/hotdog.png");
+    imageFries.attr("src", "assets/images/fries.png");
 
     imageHamburger.attr("data-hamburgervalue", numberOptions[0]);
     imageHotdog.attr("data-hogdogvalue", numberOptions[1]);
@@ -48,3 +48,4 @@ $(".hamburger-image").on("click", function () {
         alert("Oh no! You've guessed over the target number");
       }
     });
+
