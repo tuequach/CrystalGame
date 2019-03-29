@@ -49,3 +49,31 @@ $(".hamburger-image").on("click", function () {
       }
     });
 
+// function w/ hotdog, pls work
+  
+$(".hotdog-image").on("click", function () {
+  var hotValue = ($(this).attr("data-hotdogvalue"));
+    hotValue = parseInt(hotValue);
+    clicked += hotValue;
+      alert ("New score: " + clicked);
+      if (clicked === targetNumber) {
+        alert ("Yay, you've reached the target number");
+      }
+      else if (clicked >= targetNumber) {
+        alert("Oh no! You've guessed over the target number");
+      }
+    });
+
+// function w/ fries
+$(".fries-image").on("click", function () {
+  var friesValue = ($(this).attr("data-friesvalue"));
+    friesValue = parseInt(friesValue);
+    clicked += friesValue;
+      alert ("New score: " + clicked);
+      if (clicked === targetNumber) {
+        alert ("Yay, you've reached the target number");
+      }
+      else if (clicked >= targetNumber) {
+        alert("Oh no! You've guessed over the target number");
+      }
+    });
