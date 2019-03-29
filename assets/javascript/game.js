@@ -2,7 +2,7 @@
   var targetNumber = 48;
   $("#number-to-guess").text(targetNumber);
 
-  var counter = 0;
+  var clicked = 0;
 
   var imageHamburger = $("<img>");
   var imageHotdog = $("<img>");
@@ -33,3 +33,18 @@
     $("#fries").append(imageFries);
     
   }
+
+// Testing out first function w/ hamburgers
+
+$(".hamburger-image").on("click", function () {
+  var hamValue = ($(this).attr("data-hamburgervalue"));
+    hamValue = parseInt(hamValue);
+    clicked += hamValue;
+      alert ("New score: " + clicked);
+      if (clicked === targetNumber) {
+        alert ("Yay, you've reached the target number");
+      }
+      else if (clicked >= targetNumber) {
+        alert("Oh no! You've guessed over the target number");
+      }
+    });
