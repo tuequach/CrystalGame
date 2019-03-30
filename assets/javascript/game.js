@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 
   var targetNumber = 135;
   $("#number-to-guess").text(targetNumber);
@@ -13,6 +11,19 @@
   var imageHotdog = $("<img>");
   var imageFries = $("<img>");
   var imageSoda = $("<img>");
+
+  var targetNumber = 48;
+  $("#number-to-guess").text(targetNumber);
+
+  var clicked = 0;
+
+  var imageHamburger = $("<img>");
+  var imageHotdog = $("<img>");
+  var imageFries = $("<img>");
+
+  // Arrays of values will be assign later to different images
+  var numberOptions = [5, 18, 24,];
+
   //loop for every different food to be created to each values
   // also adding on class for each images so it can link to CSS and making sure it shows on page
   //linking images to html and making attr linked to a certain numberOptions
@@ -28,6 +39,10 @@
     imageFries.attr("src", "assets/images/fries.png");
     imageSoda.attr("src", "assets/images/soda.png");
 
+    imageHamburger.attr("src", "assets/images/hamburger.png");
+    imageHotdog.attr("src", "assets/images/hamburger.png");
+    imageFries.attr("src", "assets/images/hamburger.png");
+
     imageHamburger.attr("data-hamburgervalue", numberOptions[0]);
     imageHotdog.attr("data-hogdogvalue", numberOptions[1]);
     imageFries.attr("data-friesvalue", numberOptions[2]);
@@ -39,6 +54,7 @@
     $("#fries").append(imageFries);
     $("#soda").append(imageSoda);
 
+    
   }
 
 // Testing out first function w/ hamburgers
@@ -98,4 +114,4 @@ $(".soda-image").on("click", function () {
         alert("Oh no! You've guessed over the target number");
       }
     });
->>>>>>> Stashed changes
+
