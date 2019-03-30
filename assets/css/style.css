@@ -1,13 +1,53 @@
 .hamburger-image {
+  display: block;
   width: 300px;
   height: 300px;
+  float:left;
 }
 .hotdog-image {
+  display: block;
   width: 300px;
   height: 300px;
+  float: left;
 }
 .fries-image {
+  display: block;
   width: 300px;
   height: 300px;
+  float: left;
 }
-</style>
+.soda-image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  float:left;
+}
+h1 {
+  font-size: 30px;
+  color: red;
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align:center;
+}
+h2 {
+  padding: 0 auto;
+  margin:0 auto;
+  text-align: center;
+  font-size: 24px;
+  color: black; 
+}
+p {
+  padding: 0 auto;
+  margin: 0 auto;
+  color: orange;
+  font-size: 18px;
+  text-align: center;
+}
+body {
+  background-color: gray;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.container{
+  text-align: center;
+}
