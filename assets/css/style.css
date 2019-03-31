@@ -2,25 +2,30 @@
   display: block;
   width: 300px;
   height: 300px;
-  float:left;
+  margin: auto;
+ 
+  float: left;
 }
 .hotdog-image {
   display: block;
   width: 300px;
   height: 300px;
+  margin: auto;
   float: left;
 }
 .fries-image {
   display: block;
   width: 300px;
   height: 300px;
+  margin: auto;
   float: left;
 }
 .soda-image {
   display: block;
   width: 300px;
   height: 300px;
-  float:left;
+  margin: auto;
+  float: left;
 }
 h1 {
   font-size: 30px;
@@ -47,7 +52,4 @@ body {
   background-color: gray;
   margin: 0 auto;
   padding: 0 auto;
-}
-.container{
-  text-align: center;
 }
