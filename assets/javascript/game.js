@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-  var targetNumber = 65;
+  var targetNumber = 240;
   $("#number-to-guess").text(targetNumber);
   // Arrays of values will be assign later to different images
 
   var counter = 0;
 
-  var numberOptions = [2, 3, 12, 20];
+  var numberOptions = [24, 3, 12, 20];
   //loop for every different food to be created to each values
   // also adding on class for each images so it can link to CSS and making sure it shows on page
   //linking images to html and making attr linked to a certain numberOptions
@@ -47,10 +47,10 @@ $(".hamburger-image").on("click", function () {
     counter += hamburgerValue;
       alert ("New score: " + counter);
       if (counter === targetNumber) {
-        alert ("Yay, you've reached the target number");
+        alert ("Yay, you've eatten one hamburger.");
       }
       else if (counter >= targetNumber) {
-        alert("Oh no! You've guessed over the target number");
+        alert("Oh no! you're overstuffed yourself.");
       }
     });
 
@@ -62,10 +62,10 @@ $(".hotdog-image").on("click", function () {
     counter += hotdogValue;
       alert ("New score: " + counter);
       if (counter === targetNumber) {
-        alert ("Yay, you've reached the target number");
+        alert ("Yay, you've eaten one hotdog.");
       }
       else if (counter >= targetNumber) {
-        alert("Oh no! You've guessed over the target number");
+        alert("Oh no! you're overstuffed yourself.");
       }
     });
 
@@ -76,10 +76,10 @@ $(".fries-image").on("click", function () {
     counter += friesValue;
       alert ("New score: " + counter);
       if (counter === targetNumber) {
-        alert ("Yay, you've reached the target number");
+        alert ("Yay, you've eaten one pack of fries.");
       }
       else if (counter >= targetNumber) {
-        alert("Oh no! You've guessed over the target number");
+        alert("Oh no! you're overstuffed yourself.");
       }
     });
 
@@ -90,10 +90,10 @@ $(".soda-image").on("click", function () {
     counter += sodaValue;
       alert ("New score: " + counter);
       if (counter === targetNumber) {
-        alert ("Yay, you've reached the target number");
+        alert ("Yay, you've drank one cup of soda.");
       }
       else if (counter >= targetNumber) {
-        alert("Oh no! You've guessed over the target number");
+        alert("Oh no! you're overstuffed yourself.");
       }
     });
   });

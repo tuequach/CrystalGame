@@ -1,44 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
-  <title>simple crystal game</title>
+  <!--Ties in cdn links and loading in css files-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+  <title>Food Collector Game</title>
 </head>
+
 <body>
-
-<h1>
-  How Many Fast Food Have You Consumed? 
-</h1>
-<hr>
-  <h2>Number to Guess: <span id="number-to-guess"></span></h2>
-<hr>
-  <p>The Annual Fast Food Eating Contest happens once a year. 
-    You've choosen to participate as a candidate and this time, you want your record written down.
-    However, as a participant, you're trying to eat the right amount (not too less or too much food).
-    To secure your chance of winning, you must guess the correct number shown above. 
-    How many number of fast food can you memorize that you've eatten?
-    Eat as much as the needed number to test your math calculation skills.
-</p>
-  <!-- Note that this div is now empty. We will fill it dynamically -->
-<hr>
-<div class = "container">
-    <div id="hamburger"></div>
+  <!--------------Using Bootstrap Grid------------>
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1>How Many Fast Food Can You Consumed?</h1>
+    </div>
     
-    <div id="hotdog"></div>
-    
-    <div id="fries"></div>
+    <section class="row">
+      <div class= "col-12 justify-content-center">
+        <h2>Summary</h2>
+      </div>
 
-    <div id="soda"></div>
+    <div id="col">
+      <p>The Annual Fast Food Eating Contest happens once a year.
+        You've choosen to participate as a candidate and this time, you want to break the previous record.
+        However, as a participant, you're trying to eat the right amount (not too less or too much food).
+        To secure your chance of winning, you must eat to the correct amount of food listed above.
+        How many number of fast food can you memorize that you've eatten?
+        Eat as much as the needed number to test your math calculation and memorization skills.
+      </p>
+    </div>
+    </section>
+  
+  <div class= "row justify-content-between">
+    <div class="col-md-4" id="newNumber">
+      <h4>Number to Guess: <span id="number-to-guess"></span></h4>
+    </div>
 
-</div>
-
-  <!-- JAVASCRIPT  -->
-  <!-- ========================================= -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
-
+    <div class="container">
+      <div id="hamburger"></div>
+      
+      <div id="hotdog"></div>
+      
+      <div id="fries"></div>
+      
+      <div id="soda"></div>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  </div>
 </body>
+
 </html>
