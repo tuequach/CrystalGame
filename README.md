@@ -1,4 +1,4 @@
-# Unit 4 - Crystal Game Homework: UT-Bootcamp
+# UT-Bootcamp: Unit 4 - Crystal Game Homework
 ---------------------------------------
 - One page memorization game based on the theme of fast food. How fast does your memory work and how quick can you click to beat the timer?
 
