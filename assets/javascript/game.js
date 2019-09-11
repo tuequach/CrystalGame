@@ -18,12 +18,12 @@ $(document).ready(function() {
 
     $("#selected").text(targetNumber);
 
-    //settting up randomize number between 4 images - value range from 0 - 12
+    //settting up randomize number between 4 images - value range from 0 - 25
 
     allFood =[];
 
     for (var i=0; i < 4; i++) {
-      var foodValue = 0 + Math.floor(Math.random() * 12);
+      var foodValue = 0 + Math.floor(Math.random() * 25);
       allFood.push(foodValue);
     };
 
