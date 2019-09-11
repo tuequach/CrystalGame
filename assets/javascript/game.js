@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-// Setting up Global Variables
+//setting up Global Variables
   var targetNumber
   var score 
   var food
@@ -9,7 +9,7 @@ $(document).ready(function() {
   var losses =0;
   $("#losses").text(losses);
   
-  //Function runs the game when player wins or losses
+  //function runs the game when player wins or losses
 
   //randomize numbers between 25 - 280 so each target number is different
   var newGame = function() {
@@ -29,5 +29,30 @@ $(document).ready(function() {
 
     console.log(food);
 
+    //each food images is ties in with each values
+
+    $("#hamburger").attr("value", food[0]);
+    $("#hotdog").attr("value", food[1]);
+    $("#fries").attr("value", food[2]);
+    $("#soda").attr("value", food[3]);
     
+    //resetting score to 0
+    score = 0;
+    $("#score").text(score);
+  }
+
+
+  //on click values where score will match with the same images when guessed
+
+  $(".food").on("click", function () {
+    var eachFood = ($(this).attr("value"));
+    eachFood = parseInt(eachFood);
+    score = score + eachFood;
+    $("score").text(score);
+
+    //loop for game to check if players won or losses 
+
+  
+  })
+
   })
