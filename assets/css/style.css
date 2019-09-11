@@ -30,7 +30,7 @@ body {
 }
 .container {
   width: 80%;
-  margin: 5px;
+  margin: 10px;
   padding: auto;
   border-style: solid;
   border-color: black;
@@ -57,7 +57,7 @@ body {
 }
 #food-images {
   width: 80%;
-  margin: 5px;
+  margin: 10px;
   padding: 2px;
   border-style: solid;
   border-color: black;

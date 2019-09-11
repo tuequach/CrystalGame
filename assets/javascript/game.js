@@ -3,10 +3,12 @@ $(document).ready(function() {
 //setting up Global Variables
   var targetNumber
   var allFood
-  var score 
-  var wins =0; 
+  var playerScore 
+
+  var wins = 0; 
   $("#wins").text(wins);
-  var losses =0;
+
+  var losses = 0;
   $("#losses").text(losses);
   
   //function runs the game when player wins or losses
@@ -31,14 +33,14 @@ $(document).ready(function() {
 
     //each food images is ties in with each values
 
-    $("#hamburger").attr("value", allFood[0]);
-    $("#hotdog").attr("value", allFood[1]);
-    $("#fries").attr("value", allFood[2]);
-    $("#soda").attr("value", allFood[3]);
+    $("#hamburger").attr( "value", allFood[0]);
+    $("#hotdog").attr( "value", allFood[1]);
+    $("#fries").attr( "value", allFood[2]);
+    $("#soda").attr( "value", allFood[3]);
     
     //resetting score to 0
-    score = 0;
-    $("#score").text(score);
+    playerScore = 0;
+    $("#playerScore").text(playerScore);
   }
 
 
@@ -47,18 +49,18 @@ $(document).ready(function() {
   $(".food").on("click", function() {
     var eachFood = ($(this).attr("value"));
     eachFood = parseInt(eachFood);
-    score = score + eachFood;
-    $("#score").text(score);
+    playerScore = playerScore + eachFood;
+    $("#playerScore").text(playerScore);
 
     console.log(food);
     //loop for game to check if players won or losses 
 
-    if (score === targetNumber) {
+    if (playerScore === targetNumber) {
       wins = wins + 1;
       $("#wins").text(wins);
       $("#message").text("Congrats! You are the New Fast Food Champion!");
       newGame();
-    } else if (score > targetNumber) {
+    } else if (playerScore > targetNumber) {
       losses = losses + 1;
       $("#losses").text(losses);
       $("#message").text("Oh no! You've overstuffed yourself. Try again next year champ!")
@@ -67,6 +69,6 @@ $(document).ready(function() {
   });
   
   //new game when page loads
-  
   newGame();
+
 })
