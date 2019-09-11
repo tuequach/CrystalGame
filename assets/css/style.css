@@ -1,42 +1,22 @@
-#hamburger{
+#hamburger, #hotdog, #fries, #soda {
   display: block;
   width: 250px;
   height: 250px;
   margin: auto;
-  float: left;
 }
-#hotdog {
-  display: block;
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  float: left;
-}
-#fries {
-  display: block;
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  float: right;
-}
-#soda {
-  display: block;
-  width: 250px;
-  height: 250px;
-  margin: auto;
-  float: rigth;
-}
+
 h1 {
   font-size: 50px;
-  color:black;
+  color: brown;
   padding: 1px;
-  margin: 1px;
   text-align:center;
   font-family: 'Modak', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 h2 {
-  padding: 0 auto;
-  margin:0 auto;
+  padding: 10px;
+  margin: 10px;
   text-align: center;
   font-size: 24px;
   color: black; 
@@ -56,43 +36,31 @@ body {
   height: auto;
 }
 .container {
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  margin: 5px;
   padding: auto;
   border-style: solid;
   border-color: black;
   top: -2px;
 }
 #description {
-  width: 60%;
-  margin: auto;
-  padding: auto;
+  width: 80%;
   border-style: solid;
   border-color: black;
-  float: left;
+  margin: 10px;
 }
 #scoreboard {
-  width: 50%;
-  margin: 2px;
+  width: 60%;
   padding: 2px;
   border-style: solid;
   border-color: black;
-  float: right;
   text-align: center;
+  margin: 10px;
 }
-/* #totalscore {
-  width: 50%;
-  margin: 2px;
+#food-images {
+  width: 80%;
+  margin: 5px;
   padding: 2px;
   border-style: solid;
   border-color: black;
-  float: right;
-  text-align: center;
-} */
-#img-container{
-  margin: 2px;
-  padding: 2px;
-  border-style: solid;
-  border-color: black;
-
 }
