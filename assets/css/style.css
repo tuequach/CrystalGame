@@ -1,39 +1,38 @@
-.hamburger-image {
+#hamburger{
   display: block;
   width: 250px;
   height: 250px;
   margin: auto;
   float: left;
 }
-.hotdog-image {
+#hotdog {
   display: block;
   width: 250px;
   height: 250px;
   margin: auto;
   float: left;
 }
-.fries-image {
+#fries {
   display: block;
   width: 250px;
   height: 250px;
   margin: auto;
   float: right;
 }
-.soda-image {
+#soda {
   display: block;
   width: 250px;
   height: 250px;
   margin: auto;
   float: rigth;
-  
 }
 h1 {
-  font-size: 30px;
-  color: red;
-  padding: 0 ;
-  margin: 0 auto;
+  font-size: 50px;
+  color:black;
+  padding: 1px;
+  margin: 1px;
   text-align:center;
-
+  font-family: 'Modak', cursive;
 }
 h2 {
   padding: 0 auto;
@@ -41,13 +40,12 @@ h2 {
   text-align: center;
   font-size: 24px;
   color: black; 
-  float: right;
 }
 p {
   padding: 0 auto;
   margin: 0 auto;
   color:black;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 body {
@@ -58,13 +56,42 @@ body {
   height: auto;
 }
 .container {
-  width: 50%;
+  width: 100%;
   margin: auto;
   padding: auto;
+  border-style: solid;
+  border-color: black;
 }
-#summary{
-  width: 50%;
+#description {
+  width: 60%;
   margin: auto;
   padding: auto;
-  height: 40%;
+  border-style: solid;
+  border-color: black;
+  float: left;
+}
+#scoreboard {
+  width: 50%;
+  margin: 2px;
+  padding: 2px;
+  border-style: solid;
+  border-color: black;
+  float: right;
+  text-align: center;
+}
+/* #totalscore {
+  width: 50%;
+  margin: 2px;
+  padding: 2px;
+  border-style: solid;
+  border-color: black;
+  float: right;
+  text-align: center;
+} */
+#img-container{
+  margin: 2px;
+  padding: 2px;
+  border-style: solid;
+  border-color: black;
+
 }

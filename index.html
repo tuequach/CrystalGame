@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 
   <title>Food Collector Game</title>
 </head>
@@ -18,13 +20,13 @@
     <div class="row justify-content-center">
       <h1>How Many Fast Food Can You Consumed?</h1>
     </div>
-    
-    <section class="row">
-      <div class= "col-12 justify-content-center">
-        <h2>Summary</h2>
-      </div>
+  </div>
+  <br>
 
-    <div id="col">
+
+  <div class="col-md-8">
+    <div id="description">
+      <h2>Summary</h2>
       <p>The Annual Fast Food Eating Contest happens once a year.
         You've choosen to participate as a candidate and this time, you want to break the previous record.
         However, as a participant, you're trying to eat the right amount (not too less or too much food).
@@ -33,22 +35,41 @@
         Eat as much as the needed number to test your math calculation and memorization skills.
       </p>
     </div>
-    </section>
+  </div>  
   
-  <div class= "row justify-content-between">
-    <div class="col-md-4" id="newNumber">
-      <h4>Number to Guess: <span id="number-to-guess"></span></h4>
+  <div class="col-sm-8">
+    <div id ="scoreboard">
+      <h3>Number to to Reach: <span id="targetNumber"></span></h3>
+      <h3>Your score: <span id="score"></span></h3>
+    </br>
+      <h3>Wins: <span id="wins"></span></h3>
+      <h3>Losses: <span id="losses"></span></h3>
+    </div>
+  </div>
+  
+  <div class ="row">
+    <div id="img-container">
+
+    <div class="col">
+      <img src="assets/images/hamburger.png" class="img-fluid hamburger" alt="hamburger" id="hamburger">
+    </div>
+    
+    <div class="col">
+      <img src="assets/images/hotdog.png" class="img-fluid hotdog" alt="hotdog" id="hotdog">
     </div>
 
-    <div class="container">
-      <div id="hamburger"></div>
-      
-      <div id="hotdog"></div>
-      
-      <div id="fries"></div>
-      
-      <div id="soda"></div>
-          </div>
+    <div class="col">
+      <img src="assets/images/fries.png" class="img-fluid fries" alt="fries" id="fries">
+    </div>
+
+    <div class ="col">
+      <img src="assets/images/soda.png" class="img-fluid soda" alt="soda" id="soda">
+    </div>
+
+    </div>
+  </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
