@@ -52,7 +52,20 @@ $(document).ready(function() {
 
     //loop for game to check if players won or losses 
 
+    if (score === targetNumber) {
+      wins = wins + 1;
+      $("#wins").text(wins);
+      $("#message").text("Congrats! You are the New Fast Food Champion!");
+      newGame();
+    } else if (score > targetNumber) {
+      losses = losses + 1;
+      $("#losses").text(losses);
+      $("#message").text("Oh no! You've overstuffed yourself. Try again next year champ!")
+      newGame();
+    };
+  });
   
-  })
-
-  })
+  //new game when page loads
+  
+  newGame();
+})
