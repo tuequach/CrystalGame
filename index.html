@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-
-
   <title>Food Collector Game</title>
 </head>
 
@@ -39,34 +37,33 @@
   
   <div class="col-sm-8">
     <div id ="scoreboard">
-      <h3>Number to to Reach: <span id="targetNumber"></span></h3>
-      <h3>Your score: <span id="score"></span></h3>
+      <h3>Number to to Reach: <span id="selected"></span></h3>
+      <h3>Your total food consumtion: <span id="score"></span></h3>
     </br>
       <h3>Wins: <span id="wins"></span></h3>
       <h3>Losses: <span id="losses"></span></h3>
     </div>
   </div>
   
-  <div class ="row">
-    <div id="img-container">
+  <div class ="row" id= "food-images">
 
     <div class="col">
-      <img src="assets/images/hamburger.png" class="img-fluid hamburger" alt="hamburger" id="hamburger">
+      <img src="assets/images/hamburger.png" class="food" alt="Hamburger" id="hamburger">
     </div>
     
     <div class="col">
-      <img src="assets/images/hotdog.png" class="img-fluid hotdog" alt="hotdog" id="hotdog">
+      <img src="assets/images/hotdog.png" class=" food" alt="Hotdog" id="hotdog">
     </div>
 
     <div class="col">
-      <img src="assets/images/fries.png" class="img-fluid fries" alt="fries" id="fries">
+      <img src="assets/images/fries.png" class=" food" alt="Fries" id="fries">
     </div>
 
     <div class ="col">
-      <img src="assets/images/soda.png" class="img-fluid soda" alt="soda" id="soda">
+      <img src="assets/images/soda.png" class="food" alt="Soda" id="soda">
     </div>
 
-    </div>
+    
   </div>
 
 
@@ -80,7 +77,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-  </div>
+  
 </body>
 
 </html>

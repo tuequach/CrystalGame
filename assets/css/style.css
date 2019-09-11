@@ -61,6 +61,7 @@ body {
   padding: auto;
   border-style: solid;
   border-color: black;
+  top: -2px;
 }
 #description {
   width: 60%;
